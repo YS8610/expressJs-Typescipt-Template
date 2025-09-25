@@ -1,6 +1,6 @@
 import express, { Express, NextFunction, Request, Response } from "express";
 import helmet from "helmet";
-import { errorHandler } from "./middleware/errorHandler";
+import { errorHandler } from "./middleware/errorHandler.js";
 
 // func to create app is created for automated testing using supertest
 const appfunc = () => {

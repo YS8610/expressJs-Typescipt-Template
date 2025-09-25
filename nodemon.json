@@ -1,0 +1,18 @@
+{
+  "watch": [
+    "src"
+  ],
+  "ignore": [
+    "build",
+    "node_modules",
+    "src/**/*.test.ts"
+  ],
+  "ext": "ts",
+  "execMap": {
+    "_ts": "tsc --noEmit && node --no-warnings=ExperimentalWarning --loader ts-node/esm/transpile-only",
+    "_comment" : "tsc compile with no emit to check for errors and ts-node to direct execute the ts file with option of esm and transpile-only",
+    "ts" : "tsc --noEmit && tsx"
+  },
+  "legacyWatch": true,
+  "_comment": "legacyWatch is set to true if not restarting when there is changes in file, remove if not needed"
+}

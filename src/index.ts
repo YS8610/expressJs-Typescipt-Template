@@ -1,7 +1,7 @@
 import dotenv from "dotenv";
-import { clogger } from "./service/logger";
-import appfunc from "./app";
-import { Constants } from "./Constants";
+import { clogger } from "./service/logger.js";
+import appfunc from "./app.js";
+import { Constants } from "./Constants.js";
 
 
 dotenv.config();
